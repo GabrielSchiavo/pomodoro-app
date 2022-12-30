@@ -1,8 +1,8 @@
 # pomodoro-app
 
 <p align="left">
-   <!-- <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/> -->
-   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/>
+   <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
+   <!-- <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/> -->
    <img src="https://img.shields.io/github/license/GabrielSchiavo/meals-app?color=blue&style=for-the-badge"/>
 </p>
 
@@ -14,8 +14,8 @@ App Pomodoro, desenvolvido com a linguagem Dart, framework Flutter e MobX.
 
 <br>
 <div display: inline_block align="center">
-   <!-- <img src="./assets/images/screenshots/screenshot_01.png" width="300" alt="Screenshot tela hora de trabalhar"/>
-   <img src="./assets/images/screenshots/screenshot_02.png" width="300" alt="Screenshot tela hora de descansar"/> -->
+   <img src="./assets/images/screenshots/screenshot_01.png" width="300" alt="Screenshot tela hora de trabalhar"/>
+   <img src="./assets/images/screenshots/screenshot_02.png" width="300" alt="Screenshot tela hora de descansar"/>
 </div>
 
 ## :file_folder: Acesso ao projeto
