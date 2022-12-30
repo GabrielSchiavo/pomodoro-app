@@ -12,23 +12,23 @@ class Cronometro extends StatelessWidget {
     final store = Provider.of<PomodoroStore>(context);
 
     return Container(
-      color: Colors.red[400],
+      color: store.estaTrabalhando() ? Theme.of(context).colorScheme.tertiary : Theme.of(context).colorScheme.primary,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text(
-            'Hora de Trabalhar',
+          Text(
+            store.estaTrabalhando() ? 'Hora de Trabalhar' : 'Hora de Descansar',
             style: TextStyle(
               fontSize: 30,
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.background,
             ),
           ),
           const SizedBox(height: 15),
           Text(
             '${store.minutos.toString().padLeft(2, '0')}:${store.segundos.toString().padLeft(2, '0')}',
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 100,
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.background,
             ),
           ),
           const SizedBox(height: 15),

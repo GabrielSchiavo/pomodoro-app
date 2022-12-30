@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pomodoro/store/pomodoro.store.dart';
+import 'package:provider/provider.dart';
 
 class EntradaTempoBotao extends StatelessWidget {
   final IconData icone;
@@ -12,6 +14,8 @@ class EntradaTempoBotao extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final store = Provider.of<PomodoroStore>(context);
+    
     return ElevatedButton(
       onPressed: onPress,
       style: ElevatedButton.styleFrom(
@@ -22,12 +26,12 @@ class EntradaTempoBotao extends StatelessWidget {
           horizontal: 0,
           vertical: 0,
         ),
-        backgroundColor: Colors.red[400],
+        backgroundColor: store.estaTrabalhando() ? Theme.of(context).colorScheme.tertiary : Theme.of(context).colorScheme.primary,
         elevation: 0,
       ),
       child: Icon(
         icone,
-        color: Colors.white,
+        color: Theme.of(context).colorScheme.background,
         size: 22,
       ),
     );
