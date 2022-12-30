@@ -1,0 +1,10 @@
+# Restringe a busca do build_runner somente a pasta 'store' em '/lib' e somente arquivos '.store.dart'
+# Comando para executar o build_runner quando for editar algum arquivo '.store.dart':
+# flutter pub run build_runner watch
+
+targets:
+  $default:
+    builders:
+      mobx_codegen|mobx_generator:
+        generate_for:
+          - "lib/store/**.store.dart"

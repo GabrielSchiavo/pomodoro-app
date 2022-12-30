@@ -35,7 +35,12 @@ class CronometroBotao extends StatelessWidget {
               icone,
             ),
           ),
-          Text(texto),
+          Text(
+            texto,
+            style: const TextStyle(
+              fontFamily: 'Montserrat',
+            ),
+          ),
         ],
       ),
     );
