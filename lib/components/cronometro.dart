@@ -7,7 +7,7 @@ class Cronometro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
+      color: Colors.red[400],
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

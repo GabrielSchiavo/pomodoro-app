@@ -4,10 +4,14 @@ import 'package:pomodoro/components/entrada_tempo_botao.dart';
 class EntradaTempo extends StatelessWidget {
   final String titulo;
   final int valor;
+  final void Function()? inc;
+  final void Function()? dec;
 
   const EntradaTempo({
     required this.titulo,
     required this.valor,
+    this.inc,
+    this.dec,
     super.key,
   });
 
@@ -19,32 +23,16 @@ class EntradaTempo extends StatelessWidget {
         Text(
           titulo,
           style: const TextStyle(
-            fontSize: 22,
+            fontSize: 21,
           ),
         ),
-        const SizedBox(height: 15),
+        const SizedBox(height: 10),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // ElevatedButton(
-            //   onPressed: () {},
-            //   style: ElevatedButton.styleFrom(
-            //     shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.circular(50),
-            //     ),
-            //     padding: const EdgeInsets.all(0),
-            //     backgroundColor: Colors.red,
-            //   ),
-            //   child: const Icon(
-            //     Icons.arrow_downward_rounded,
-            //     color: Colors.white,
-            //   ),
-            // ),
-
-
             EntradaTempoBotao(
               icone: Icons.arrow_downward_rounded,
-              onPress: () {},
+              onPress: dec,
             ),
             Padding(
               padding: const EdgeInsets.only(
@@ -60,25 +48,9 @@ class EntradaTempo extends StatelessWidget {
             ),
             EntradaTempoBotao(
               icone: Icons.arrow_upward_rounded,
-              onPress: () {},
+              onPress: inc,
             ),
             const SizedBox(width: 5),
-
-
-            // ElevatedButton(
-            //   onPressed: () {},
-            //   style: ElevatedButton.styleFrom(
-            //     shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.circular(50),
-            //     ),
-            //     padding: const EdgeInsets.all(0),
-            //     backgroundColor: Colors.red,
-            //   ),
-            //   child: const Icon(
-            //     Icons.arrow_upward_rounded,
-            //     color: Colors.white,
-            //   ),
-            // ),
           ],
         ),
       ],
