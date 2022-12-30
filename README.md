@@ -1,16 +1,45 @@
-# pomodoro
+# pomodoro-app
 
-A new Flutter project.
+<p align="left">
+   <!-- <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/> -->
+   <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/>
+   <img src="https://img.shields.io/github/license/GabrielSchiavo/meals-app?color=blue&style=for-the-badge"/>
+</p>
 
-## Getting Started
+App Pomodoro, desenvolvido com a linguagem Dart, framework Flutter e MobX.
 
-This project is a starting point for a Flutter application.
+## :hammer: Funcionalidades do projeto
+* `Tempo de trabalho e descanso:` imcremento de tempo de 1 em 1 min. Mín 1min.
+* `Opção de pause e reiniciar:` função para pausar e reiniciar o tempo.
 
-A few resources to get you started if this is your first Flutter project:
+<br>
+<div display: inline_block align="center">
+   <!-- <img src="./assets/images/screenshots/screenshot_01.png" width="300" alt="Screenshot tela hora de trabalhar"/>
+   <img src="./assets/images/screenshots/screenshot_02.png" width="300" alt="Screenshot tela hora de descansar"/> -->
+</div>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## :file_folder: Acesso ao projeto
+Você pode [acessar o código-fonte do projeto](https://github.com/GabrielSchiavo/pomodoro-app) ou [baixá-lo](https://github.com/GabrielSchiavo/pomodoro-app/archive/refs/heads/main.zip).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## :hammer_and_wrench: Abrir e rodar o projeto
+Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projeto funcionar você deve ter configurado em seu PC:
+
+* Flutter - Versão >=2.18.2 <3.0.0
+
+Abra um terminal na pasta raiz do projeto e execute estes comandos:
+```bash
+dart pub get
+```
+```bash
+flutter pub get
+```
+
+Agora ao abrir o projeto com o Visual Studio Code, abra o arquivo "main.dart" localizado na pasta "lib", agora pode executar ou depurar no seu smartphone, em um emulador Android ou iOS, no Windows ou no navegador.
+
+## :white_check_mark: Tecnologias utilizadas
+* `Dart - 2.18.2`
+* `Flutter - 3.3.6`
+* `MobX - 2.1.3`
+* `flutter_mobx - 2.0.6+5`
+* `provider - 6.0.4`
+* `Material Design 3`
