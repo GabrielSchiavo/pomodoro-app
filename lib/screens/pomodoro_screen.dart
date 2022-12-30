@@ -9,6 +9,7 @@ class Pomodoro extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        top: false,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -17,13 +18,13 @@ class Pomodoro extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 40),
-              child: Column(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
                   EntradaTempo(
                     titulo: 'Trabalho',
                     valor: 25,
                   ),
-                  SizedBox(height: 15),
                   EntradaTempo(
                     titulo: 'Descanço',
                     valor: 5,
