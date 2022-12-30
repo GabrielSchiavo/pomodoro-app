@@ -26,7 +26,7 @@ class EntradaTempo extends StatelessWidget {
             fontSize: 21,
           ),
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: 8),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -34,23 +34,16 @@ class EntradaTempo extends StatelessWidget {
               icone: Icons.arrow_downward_rounded,
               onPress: dec,
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                left: 5,
-                right: 5,
-              ),
-              child: Text(
-                '$valor min',
-                style: const TextStyle(
-                  fontSize: 17,
-                ),
+            Text(
+              '$valor min',
+              style: const TextStyle(
+                fontSize: 17,
               ),
             ),
             EntradaTempoBotao(
               icone: Icons.arrow_upward_rounded,
               onPress: inc,
             ),
-            const SizedBox(width: 5),
           ],
         ),
       ],

@@ -19,13 +19,7 @@ class EntradaTempoBotao extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPress,
       style: ElevatedButton.styleFrom(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(50),
-        ),
-        padding: const EdgeInsets.symmetric(
-          horizontal: 0,
-          vertical: 0,
-        ),
+        shape: const CircleBorder(),
         backgroundColor: store.estaTrabalhando() ? Theme.of(context).colorScheme.tertiary : Theme.of(context).colorScheme.primary,
         elevation: 0,
       ),
