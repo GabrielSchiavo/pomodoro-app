@@ -9,7 +9,7 @@
 App Pomodoro, desenvolvido com a linguagem Dart, framework Flutter e MobX.
 
 ## :hammer: Funcionalidades do projeto
-* `Tempo de trabalho e descanso:` imcremento de tempo de 1 em 1 min. Mín 1min.
+* `Tempo de trabalho e descanso:` incremento de tempo a cada 1 min. Mín 1min.
 * `Opção de pause e reiniciar:` função para pausar e reiniciar o tempo.
 
 <br>
